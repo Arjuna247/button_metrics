@@ -7,7 +7,7 @@ button.addEventListener("click", () => {
   countDisplay.textContent = count;
 
   // Send updated count to backend
-  fetch("http://localhost:3000/save-count", {
+  fetch("http://localhost:3001", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ count: count })
